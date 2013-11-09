@@ -14,7 +14,10 @@ app.get('/', function(req, res){
     			console.log($('title').text());
     			res.end(JSON.stringify({title: $('title').text()}))
     		})
-  		}	
+  		}
+  		else {
+  			res.end(null);
+  		}
 		
 	})
 });
